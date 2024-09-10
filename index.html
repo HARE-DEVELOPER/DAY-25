@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #product-list, #cart {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item, .cart-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-item img, .cart-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-item button, .cart-item button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product-item button:hover, .cart-item button:hover {
+            background-color: #0056b3;
+        }
+        #cart-summary {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <h2>Products</h2>
+    <div id="product-list"></div>
+
+    <h2>Cart</h2>
+    <div id="cart"></div>
+    <div id="cart-summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
